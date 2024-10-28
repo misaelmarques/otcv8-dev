@@ -815,8 +815,8 @@ void Map::setAwareRange(const AwareRange& range)
 void Map::resetAwareRange()
 {
    AwareRange range;
-   range.left = maxClientViewportX; //Change this to = maxClientViewportX
-   range.top = maxClientViewportY; //Change this to = maxClientViewportY
+   range.left = 10; //Change this to = maxClientViewportX
+   range.top = 5; //Change this to = maxClientViewportY
    range.bottom = range.top+1;
    range.right = range.left+1;
    setAwareRange(range);
